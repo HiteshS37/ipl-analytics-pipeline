@@ -25,7 +25,9 @@ python -m pip install -r requirements.txt
 python -m pytest
 ```
 
-`src/ipl_analytics/metrics.py` contains tested **elementary** cricket arithmetic. This does not yet represent a complete pipeline or a validated player impact model.
+`src/ipl_analytics/metrics.py` contains tested **elementary** cricket arithmetic. `src/ipl_analytics/validation.py` checks a preliminary delivery-data contract (see `docs/data_contract.md`); synthetic tests are provided in `tests/`. This does **not** yet represent a complete ingestion pipeline or validated player impact model.
+
+[![Python tests](https://github.com/HiteshS37/ipl-analytics-pipeline/actions/workflows/python-tests.yml/badge.svg)](https://github.com/HiteshS37/ipl-analytics-pipeline/actions/workflows/python-tests.yml)
 
 ## Roadmap
 - [ ] Identify and document legally reusable source dataset
